@@ -166,212 +166,100 @@ footer {
     }
 }
 
-/* Contact Section */
+/* General Reset */
+body, h2, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4a4a4a;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container for Contact Form */
 .contact {
-    background-color: #f4e2d8;
-    padding: 3rem 2rem;
-    border-radius: 10px;
-    margin: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact h2 {
-    text-align: center;
-    color: #5b4055;
-    margin-bottom: 1rem;
-}
-
-.contact p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #70576b;
-}
-
-.contact form {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-weight: bold;
-    color: #5b4055;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #8e6c88;
-    box-shadow: 0 0 5px rgba(142, 108, 136, 0.5);
-}
-
-.contact button {
-    padding: 0.75rem 1.5rem;
-    background-color: #8e6c88;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact button:hover {
-    background-color: #70576b;
-}
-
-/* Responsive Contact Section */
-@media (max-width: 768px) {
-    .contact {
-        margin: 1rem;
-        padding: 2rem 1rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 0.9rem;
-    }
-
-    .contact button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact {
-        padding: 1.5rem;
-    }
-
-    .contact h2 {
-        font-size: 1.5rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 0.8rem;
-    }
-
-    .contact button {
-        font-size: 0.8rem;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-    
-}
-
-/* Products Section Styling */
-.products-section {
-    padding: 60px 20px;
-    background-color: #f3f3f3;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
-.products-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
+/* Title Styling */
+.contact h2 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.products-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 0 20px;
-}
-
-/* Product Card Styling */
-.product-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.product-image {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #eee;
-}
-
-.product-details {
-    padding: 20px;
-}
-
-.product-name {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-size: 20px;
-    color: #f39c12;
-    margin-bottom: 15px;
-}
-
-.product-description {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.buy-btn {
-    padding: 10px 20px;
-    background-color: #f39c12;
-    color: #fff;
-    border: none;
+/* Form Styling */
+.contact-form {
+    background-color: #fffdf9;
+    padding: 2rem;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Form Labels */
+.contact-form label {
+    color: #6a6a6a;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Submit Button Styling */
+.contact-form button {
+    background-color: #ffaf87;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.buy-btn:hover {
-    background-color: #e67e22;
+.contact-form button:hover {
+    background-color: #e59570;
 }
 
-/* Responsive Design for Mobile */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .products-container {
-        grid-template-columns: 1fr; /* Stack products on mobile */
+    .contact-form {
+        padding: 1.5rem;
     }
-
-    .product-card {
-        width: 90%;
-    }
-
-    .product-name {
-        font-size: 20px;
-    }
-
-    .product-price {
-        font-size: 18px;
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
+s
